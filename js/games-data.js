@@ -1,4 +1,4 @@
-/* ============================================================
+  /* ============================================================
    LISTA DE JOGOS (apenas exemplos — nenhum funciona)
    Para adicionar um jogo real depois:
    - id:    identificador único (usado na URL jogo.html?id=...)
