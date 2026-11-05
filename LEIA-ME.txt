@@ -1,0 +1,24 @@
+MEU FRIV — modelo de portal de jogos (somente a "casca")
+=========================================================
+
+COMO ABRIR
+  Dê dois cliques em index.html. Não precisa de servidor nem internet.
+
+ESTRUTURA
+  index.html          página inicial (menu, busca, categorias, grade de jogos)
+  jogo.html           página de um jogo (área do jogo + jogos parecidos)
+  css/style.css       todo o visual (cores ficam no topo, em :root)
+  js/games-data.js    lista de categorias e jogos de EXEMPLO
+  js/main.js          busca, filtro de categorias e montagem das páginas
+  img/favicon.svg     ícone da aba
+
+COMO PERSONALIZAR
+  - Nome do site: troque "Meu Friv" em index.html e jogo.html.
+  - Cores: edite as variáveis no começo de css/style.css.
+  - Novas categorias/jogos: edite js/games-data.js.
+  - Para um jogo abrir de verdade, adicione  url: "caminho/do/jogo/index.html"
+    ao jogo em games-data.js. Ele será carregado num iframe na jogo.html.
+
+OBSERVAÇÃO
+  Nenhum jogo funciona: todos os itens são apenas exemplos visuais.
+  Use somente jogos que você tenha direito de publicar.

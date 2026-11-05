@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jogo — Meu Friv</title>
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topo">
+  <div class="topo__in">
+    <a class="logo" href="index.html" aria-label="Meu Friv — página inicial">
+      <span class="logo__icone" aria-hidden="true">F</span>Meu <b>Friv</b>
+    </a>
+    <form class="busca" role="search" onsubmit="return false">
+      <label class="sr-only" for="busca">Buscar jogos</label>
+      <span aria-hidden="true">🔍</span>
+      <input id="busca" type="search" placeholder="Buscar jogos..." autocomplete="off">
+    </form>
+    <div class="topo__links">
+      <button class="btn btn--verde" id="btn-aleatorio" type="button">🎲 Jogo aleatório</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="pagina pagina--cheia">
+    <p class="migalhas">
+      <a href="index.html">Início</a> › <span id="migalha-cat"></span> › <span id="migalha-jogo"></span>
+    </p>
+
+    <div class="jogo">
+      <article class="jogo__caixa">
+        <div class="jogo__barra">
+          <div>
+            <h1 id="jogo-titulo">Jogo</h1>
+            <p id="jogo-cat"></p>
+          </div>
+        </div>
+
+        <!-- ÁREA DO JOGO -->
+        <div class="moldura" id="moldura">
+          <!--
+            Para colocar um jogo real, defina "url" no jogo em js/games-data.js
+            (ou troque este bloco por):
+            <iframe src="CAMINHO/DO/JOGO/index.html" title="Nome do jogo" allowfullscreen></iframe>
+          -->
+          <div class="moldura__vazio">
+            <div>
+              <div class="grande" id="vazio-emoji" aria-hidden="true">🎮</div>
+              <h2 id="vazio-titulo">Jogo de exemplo</h2>
+              <p>Aqui aparece o jogo. Este é só um modelo: adicione o endereço do jogo em
+                <code>js/games-data.js</code> para ele abrir nesta área.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="jogo__acoes">
+          <button class="btn" id="btn-tela-cheia" type="button">⛶ Tela cheia</button>
+          <button class="btn btn--coral" id="btn-curtir" type="button" aria-pressed="false">🤍 Curtir</button>
+          <a class="btn btn--claro" href="index.html">← Voltar aos jogos</a>
+        </div>
+
+        <p class="descricao">
+          <strong>Como jogar:</strong> espaço reservado para as instruções do jogo
+          (teclas, mouse, objetivo). Texto de exemplo.
+        </p>
+      </article>
+
+      <aside class="jogo__lado" aria-labelledby="titulo-parecidos">
+        <h2 id="titulo-parecidos">Jogos parecidos</h2>
+        <div class="parecidos" id="parecidos"></div>
+      </aside>
+    </div>
+
+    <section class="mais" aria-labelledby="titulo-mais">
+      <div class="titulo-secao"><h2 id="titulo-mais">Mais jogos</h2></div>
+      <div class="grade" id="mais-jogos"></div>
+    </section>
+  </div>
+</main>
+
+<footer class="rodape">
+  <div class="rodape__in">
+    <p>© 2026 Meu Friv — site de exemplo, sem jogos funcionando.</p>
+    <nav aria-label="Rodapé">
+      <a href="#">Sobre</a><a href="#">Contato</a><a href="#">Política de privacidade</a><a href="#">Termos de uso</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/games-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu Friv — Jogos online grátis</title>
+  <meta name="description" content="Modelo de portal de jogos online. Apenas a estrutura, sem jogos.">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topo">
+  <div class="topo__in">
+    <a class="logo" href="index.html" aria-label="Meu Friv — página inicial">
+      <span class="logo__icone" aria-hidden="true">F</span>Meu <b>Friv</b>
+    </a>
+    <form class="busca" role="search" onsubmit="return false">
+      <label class="sr-only" for="busca">Buscar jogos</label>
+      <span aria-hidden="true">🔍</span>
+      <input id="busca" type="search" placeholder="Buscar jogos..." autocomplete="off">
+    </form>
+    <div class="topo__links">
+      <button class="btn btn--verde" id="btn-aleatorio" type="button">🎲 Jogo aleatório</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="pagina">
+    <aside class="lateral" aria-label="Categorias">
+      <h2>Categorias</h2>
+      <ul class="cats" id="lista-cats"></ul>
+    </aside>
+
+    <section aria-labelledby="titulo-grade">
+      <div class="titulo-secao">
+        <h1 id="titulo-grade">Todos os jogos</h1>
+        <small id="contagem" aria-live="polite"></small>
+      </div>
+      <div class="grade" id="grade"></div>
+    </section>
+  </div>
+</main>
+
+<footer class="rodape">
+  <div class="rodape__in">
+    <p>© 2026 Meu Friv — site de exemplo, sem jogos funcionando.</p>
+    <nav aria-label="Rodapé">
+      <a href="#">Sobre</a><a href="#">Contato</a><a href="#">Política de privacidade</a><a href="#">Termos de uso</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/games-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
